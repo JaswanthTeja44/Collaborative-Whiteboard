@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborative Whiteboard JHTK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Collaborative Whiteboard JHTK</header>
+
+  <div class="toolbar">
+    <input type="color" id="colorPicker" value="#000000">
+    <button onclick="setTool('pen')">Pen</button>
+    <button onclick="setTool('eraser')">Eraser</button>
+    <button onclick="setTool('text')">Text</button>
+    <button onclick="clearBoard()">Clear</button>
+    <button onclick="saveBoard()">Save</button>
+  </div>
+
+  <canvas id="board" width="1000" height="600"></canvas>
+  <input type="text" class="text-input" id="textInput" />
+
+  <script src="script.js">
+    </script>
+</body>
+</html>
